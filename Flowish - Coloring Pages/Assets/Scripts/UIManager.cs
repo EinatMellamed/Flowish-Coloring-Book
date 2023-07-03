@@ -63,12 +63,14 @@ public class UIManager : MonoBehaviour
     }
     public void DisableDrawing()
     {
+        draw.SetActive(false);
         brush.SetActive(false);
         eraser.SetActive(false);
 
     }
     public void EnableDrawing()
     {
+        draw.SetActive(true);
         brush.SetActive(true);
         eraser.SetActive(true);
     }

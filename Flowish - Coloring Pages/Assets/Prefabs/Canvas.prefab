@@ -698,8 +698,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: -0.0099792}
-  m_SizeDelta: {x: 1080, y: 1920}
+  m_AnchoredPosition: {x: -0.000030518, y: -137.50528}
+  m_SizeDelta: {x: 1080, y: 1645.0574}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &465670064
 MonoBehaviour:
@@ -2599,8 +2599,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000014305, y: -533.39197}
-  m_SizeDelta: {x: 1080, y: 2986.782}
+  m_AnchoredPosition: {x: -0.000014305, y: -8969.372}
+  m_SizeDelta: {x: 1080, y: 19584.344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1762177024
 MonoBehaviour:
@@ -2798,8 +2798,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1080, y: 1920}
+  m_AnchoredPosition: {x: 0, y: -47.24243}
+  m_SizeDelta: {x: 1080, y: 2014.4849}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1769504640
 CanvasRenderer:
@@ -3385,6 +3385,7 @@ GameObject:
   - component: {fileID: 5513110298873594523}
   - component: {fileID: 8959497751588015290}
   - component: {fileID: 652556112320393139}
+  - component: {fileID: 1475889744}
   m_Layer: 5
   m_Name: GameObject 28
   m_TagString: Untagged
@@ -3453,6 +3454,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1475889744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63887652429113139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 1771701125}
 --- !u!1 &69281244492905518
 GameObject:
   m_ObjectHideFlags: 0
@@ -4016,7 +4030,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1264431329}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4870,7 +4896,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage5
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 986512893}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4891,6 +4929,7 @@ GameObject:
   - component: {fileID: 4347163049770174007}
   - component: {fileID: 8571973281995592891}
   - component: {fileID: 4358133688269257273}
+  - component: {fileID: 448511440}
   m_Layer: 5
   m_Name: GameObject 38
   m_TagString: Untagged
@@ -4959,6 +4998,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &448511440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220944780893059261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 2186854573577246247}
 --- !u!1 &261050595422351126
 GameObject:
   m_ObjectHideFlags: 0
@@ -5467,7 +5519,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage2
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 670957502}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5733,6 +5797,7 @@ GameObject:
   - component: {fileID: 2790586821330355126}
   - component: {fileID: 1873874787400331184}
   - component: {fileID: 1692360614273600937}
+  - component: {fileID: 1580787087}
   m_Layer: 5
   m_Name: GameObject 25
   m_TagString: Untagged
@@ -5801,6 +5866,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1580787087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606682039592681038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 899260088}
 --- !u!1 &617441436616673458
 GameObject:
   m_ObjectHideFlags: 0
@@ -5812,6 +5890,7 @@ GameObject:
   - component: {fileID: 5961363836131888805}
   - component: {fileID: 119430659133699154}
   - component: {fileID: 3955130807698454428}
+  - component: {fileID: 1720475078}
   m_Layer: 5
   m_Name: GameObject 46
   m_TagString: Untagged
@@ -5880,6 +5959,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1720475078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617441436616673458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 6364575675417715426}
 --- !u!1 &618894391454786102
 GameObject:
   m_ObjectHideFlags: 0
@@ -6367,7 +6459,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage2
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 985226476}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6523,6 +6627,7 @@ GameObject:
   - component: {fileID: 7005918918161904745}
   - component: {fileID: 7044315129303155299}
   - component: {fileID: 1854430121669829884}
+  - component: {fileID: 978514586}
   m_Layer: 5
   m_Name: GameObject 16
   m_TagString: Untagged
@@ -6591,6 +6696,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &978514586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783129064115850414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 2995272536216561861}
 --- !u!1 &816471756485007135
 GameObject:
   m_ObjectHideFlags: 0
@@ -7925,7 +8043,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 225949638}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8178,6 +8308,7 @@ GameObject:
   - component: {fileID: 5459041867895680398}
   - component: {fileID: 2729092322133107252}
   - component: {fileID: 3110477426346061323}
+  - component: {fileID: 1101855513}
   m_Layer: 5
   m_Name: GameObject 40
   m_TagString: Untagged
@@ -8246,6 +8377,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1101855513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259942937515107763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 5827738481794749174}
 --- !u!1 &1268929005510685087
 GameObject:
   m_ObjectHideFlags: 0
@@ -9308,6 +9452,7 @@ GameObject:
   - component: {fileID: 258902201538823038}
   - component: {fileID: 4944637607231929059}
   - component: {fileID: 559560369323213957}
+  - component: {fileID: 461336723}
   m_Layer: 5
   m_Name: GameObject 44
   m_TagString: Untagged
@@ -9376,6 +9521,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &461336723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553025605734450047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 3652590370882117912}
 --- !u!1 &1554144857545182286
 GameObject:
   m_ObjectHideFlags: 0
@@ -9463,6 +9621,7 @@ GameObject:
   - component: {fileID: 4951613941591412678}
   - component: {fileID: 5710717389971903389}
   - component: {fileID: 6408806468306993376}
+  - component: {fileID: 1907491040}
   m_Layer: 5
   m_Name: GameObject 31
   m_TagString: Untagged
@@ -9531,6 +9690,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1907491040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603157333459317844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 1192033348109710113}
 --- !u!1 &1606631465988431104
 GameObject:
   m_ObjectHideFlags: 0
@@ -9655,7 +9827,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage4
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1101855513}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9865,7 +10049,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1031127613}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11061,7 +11257,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2015540156}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11295,6 +11503,7 @@ GameObject:
   - component: {fileID: 4565224357469752196}
   - component: {fileID: 4789817543987830028}
   - component: {fileID: 2890222842261058288}
+  - component: {fileID: 1465694113}
   m_Layer: 5
   m_Name: GameObject 22
   m_TagString: Untagged
@@ -11363,6 +11572,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1465694113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966228528873476636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 7239289902925263261}
 --- !u!1 &1975942960223647324
 GameObject:
   m_ObjectHideFlags: 0
@@ -11563,7 +11785,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: CloseColorPanels
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 685237294}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11584,6 +11818,7 @@ GameObject:
   - component: {fileID: 5051453220554421249}
   - component: {fileID: 5802079306516502526}
   - component: {fileID: 7200887615550363490}
+  - component: {fileID: 985226476}
   m_Layer: 5
   m_Name: GameObject 32
   m_TagString: Untagged
@@ -11652,6 +11887,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &985226476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990075348455094301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 1878806984159095676}
 --- !u!1 &1990576328425348312
 GameObject:
   m_ObjectHideFlags: 0
@@ -11663,6 +11911,7 @@ GameObject:
   - component: {fileID: 7906013369832296877}
   - component: {fileID: 5096038973555142305}
   - component: {fileID: 2252608541053726580}
+  - component: {fileID: 535230945}
   m_Layer: 5
   m_Name: GameObject 23
   m_TagString: Untagged
@@ -11731,6 +11980,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &535230945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990576328425348312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 1378533705652642488}
 --- !u!1 &1991765334614489788
 GameObject:
   m_ObjectHideFlags: 0
@@ -11855,7 +12117,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1745326084}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14095,7 +14369,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c6e62d552aa66ec4ca881cf83982a65c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36fecb6b452ce7a41bff1a92568b2def, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14859,6 +15133,7 @@ GameObject:
   - component: {fileID: 8630462277304341529}
   - component: {fileID: 8064020513989277910}
   - component: {fileID: 7973801190044906175}
+  - component: {fileID: 225949638}
   m_Layer: 5
   m_Name: GameObject 47
   m_TagString: Untagged
@@ -14927,6 +15202,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &225949638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2965902290074829503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 5566466355736407500}
 --- !u!1 &2988460496990631243
 GameObject:
   m_ObjectHideFlags: 0
@@ -15244,6 +15532,7 @@ GameObject:
   - component: {fileID: 6439268029961953629}
   - component: {fileID: 8735736299071191938}
   - component: {fileID: 8357642665214847762}
+  - component: {fileID: 74198835}
   m_Layer: 5
   m_Name: GameObject 24
   m_TagString: Untagged
@@ -15312,6 +15601,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &74198835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3073726656301448689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 1919307183}
 --- !u!1 &3083122617902023124
 GameObject:
   m_ObjectHideFlags: 0
@@ -15647,7 +15949,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 504790581}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16602,7 +16916,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1714740994}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17139,7 +17465,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage2
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1465694113}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17273,7 +17611,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1720475078}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17370,6 +17720,7 @@ GameObject:
   - component: {fileID: 708951518852127332}
   - component: {fileID: 560242257787414341}
   - component: {fileID: 5180019258345612848}
+  - component: {fileID: 1221756514}
   m_Layer: 5
   m_Name: GameObject 29
   m_TagString: Untagged
@@ -17438,6 +17789,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1221756514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3650228360814590168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 1789580623}
 --- !u!1 &3652590370882117912
 GameObject:
   m_ObjectHideFlags: 0
@@ -18620,6 +18984,7 @@ GameObject:
   - component: {fileID: 3894014806050964129}
   - component: {fileID: 3791022306673687112}
   - component: {fileID: 2359217700278092739}
+  - component: {fileID: 395600839}
   m_Layer: 5
   m_Name: GameObject 37
   m_TagString: Untagged
@@ -18688,6 +19053,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &395600839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3969493350021291855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 8484766508254246743}
 --- !u!1 &3994819992645086166
 GameObject:
   m_ObjectHideFlags: 0
@@ -19994,7 +20372,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage3
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1475889744}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20491,7 +20881,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1246341045}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20836,7 +21238,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2143901851}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20933,6 +21347,7 @@ GameObject:
   - component: {fileID: 6997745213546816586}
   - component: {fileID: 4673086976775704988}
   - component: {fileID: 2396992683082605555}
+  - component: {fileID: 685237294}
   m_Layer: 5
   m_Name: GameObject 18
   m_TagString: Untagged
@@ -21001,6 +21416,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &685237294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4497297888228704032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 5787788341600485591}
 --- !u!1 &4510658744087552835
 GameObject:
   m_ObjectHideFlags: 0
@@ -21125,7 +21553,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1965563629}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21146,6 +21586,7 @@ GameObject:
   - component: {fileID: 2046748348561988674}
   - component: {fileID: 6488741227447118910}
   - component: {fileID: 6718008271906990727}
+  - component: {fileID: 986512893}
   m_Layer: 5
   m_Name: GameObject 33
   m_TagString: Untagged
@@ -21214,6 +21655,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &986512893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4512614197878388158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 2109016901701218619}
 --- !u!1 &4537248056734072748
 GameObject:
   m_ObjectHideFlags: 0
@@ -21280,7 +21734,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c6e62d552aa66ec4ca881cf83982a65c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7551ea2628089b44884f9d6b807b1e04, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22228,7 +22682,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 878754235}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22327,6 +22793,7 @@ GameObject:
   - component: {fileID: 9109328142197149193}
   - component: {fileID: 7089845939867140834}
   - component: {fileID: 4533350389862953723}
+  - component: {fileID: 1246341045}
   m_Layer: 5
   m_Name: GameObject 36
   m_TagString: Untagged
@@ -22395,6 +22862,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1246341045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4753330936775362822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 7981912359383165081}
 --- !u!1 &4761575892634612493
 GameObject:
   m_ObjectHideFlags: 0
@@ -22802,7 +23282,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c6e62d552aa66ec4ca881cf83982a65c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cbcfbc97f45dc0a459e0ac88e0ee2e8c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -23127,6 +23607,7 @@ GameObject:
   - component: {fileID: 7050961205835911825}
   - component: {fileID: 9155875397417622017}
   - component: {fileID: 5721140338319535604}
+  - component: {fileID: 1965563629}
   m_Layer: 5
   m_Name: GameObject 39
   m_TagString: Untagged
@@ -23195,6 +23676,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1965563629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4952458169244115194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 4693986572425047138}
 --- !u!1 &4996848712932696483
 GameObject:
   m_ObjectHideFlags: 0
@@ -23454,7 +23948,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage4
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1907491040}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23773,6 +24279,7 @@ GameObject:
   - component: {fileID: 7025790394297718638}
   - component: {fileID: 2210778638378272466}
   - component: {fileID: 4365099950897225564}
+  - component: {fileID: 1787936366}
   m_Layer: 5
   m_Name: GameObject34
   m_TagString: Untagged
@@ -23841,6 +24348,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1787936366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5111234823240851650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 6276313798201683948}
 --- !u!1 &5134252884141782930
 GameObject:
   m_ObjectHideFlags: 0
@@ -23907,7 +24427,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c6e62d552aa66ec4ca881cf83982a65c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03d3e939769b6f4e8038464c5e1b872, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24284,7 +24804,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage5
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 74198835}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25661,6 +26193,7 @@ GameObject:
   - component: {fileID: 1777229279591951028}
   - component: {fileID: 3590474116062613686}
   - component: {fileID: 2323795677064191138}
+  - component: {fileID: 1542984254}
   m_Layer: 5
   m_Name: GameObject 42
   m_TagString: Untagged
@@ -25729,6 +26262,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1542984254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5403652401530903544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 1239395032091336294}
 --- !u!1 &5405853731487552156
 GameObject:
   m_ObjectHideFlags: 0
@@ -25853,7 +26399,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage3
+        m_MethodName: CloseColorPanels
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 859371421}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26026,6 +26584,7 @@ GameObject:
   - component: {fileID: 3424340556331580872}
   - component: {fileID: 6446099778267710563}
   - component: {fileID: 7837419165529460313}
+  - component: {fileID: 1031127613}
   m_Layer: 5
   m_Name: GameObject 27
   m_TagString: Untagged
@@ -26094,6 +26653,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1031127613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5465126618129377250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 1251457948}
 --- !u!1 &5509869748825297852
 GameObject:
   m_ObjectHideFlags: 0
@@ -29903,7 +30475,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 978514586}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30226,6 +30810,7 @@ GameObject:
   - component: {fileID: 3302483721905130587}
   - component: {fileID: 8106671892986175791}
   - component: {fileID: 4031019119922595001}
+  - component: {fileID: 2015540156}
   m_Layer: 5
   m_Name: GameObject 20
   m_TagString: Untagged
@@ -30294,6 +30879,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2015540156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6399902461109434692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 6090183034467705660}
 --- !u!1 &6465855598214622686
 GameObject:
   m_ObjectHideFlags: 0
@@ -30531,7 +31129,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage5
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1542984254}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30628,6 +31238,7 @@ GameObject:
   - component: {fileID: 912433739046164366}
   - component: {fileID: 8449228089118615021}
   - component: {fileID: 2210712314835083935}
+  - component: {fileID: 859371421}
   m_Layer: 5
   m_Name: GameObject 19
   m_TagString: Untagged
@@ -30696,6 +31307,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &859371421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6552172978721495920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 3776274849651373161}
 --- !u!1 &6555051670583148346
 GameObject:
   m_ObjectHideFlags: 0
@@ -31303,6 +31927,7 @@ GameObject:
   - component: {fileID: 2439343855724679650}
   - component: {fileID: 2303686847676782126}
   - component: {fileID: 8572817414070240376}
+  - component: {fileID: 1745326084}
   m_Layer: 5
   m_Name: GameObject 43
   m_TagString: Untagged
@@ -31371,6 +31996,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1745326084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6829855399357018776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 5977823677179602333}
 --- !u!1 &6881945998487787004
 GameObject:
   m_ObjectHideFlags: 0
@@ -31475,6 +32113,7 @@ GameObject:
   - component: {fileID: 1580561923716232126}
   - component: {fileID: 7248737891050444011}
   - component: {fileID: 3944236001024374804}
+  - component: {fileID: 504790581}
   m_Layer: 5
   m_Name: GameObject21
   m_TagString: Untagged
@@ -31543,6 +32182,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &504790581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6896836159859553400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 4609968377274648754}
 --- !u!1 &6905186579003357528
 GameObject:
   m_ObjectHideFlags: 0
@@ -32069,6 +32721,7 @@ GameObject:
   - component: {fileID: 1831854020771369675}
   - component: {fileID: 8529029098075758039}
   - component: {fileID: 6683259198801821954}
+  - component: {fileID: 1253435655}
   m_Layer: 5
   m_Name: GameObject35
   m_TagString: Untagged
@@ -32137,6 +32790,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1253435655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7112619848844534179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 1743485175476008125}
 --- !u!1 &7119905034980291275
 GameObject:
   m_ObjectHideFlags: 0
@@ -32682,6 +33348,7 @@ GameObject:
   - component: {fileID: 2079576544636908403}
   - component: {fileID: 8657547571121575095}
   - component: {fileID: 1080991260311360490}
+  - component: {fileID: 878754235}
   m_Layer: 5
   m_Name: GameObject 26
   m_TagString: Untagged
@@ -32750,6 +33417,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &878754235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7327067478268355092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 710054271}
 --- !u!1 &7352224424848269406
 GameObject:
   m_ObjectHideFlags: 0
@@ -33028,7 +33708,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage3
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 395600839}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -34111,6 +34803,7 @@ GameObject:
   - component: {fileID: 6444379302122548887}
   - component: {fileID: 1963272089285837354}
   - component: {fileID: 1610817231962309046}
+  - component: {fileID: 2143901851}
   m_Layer: 5
   m_Name: GameObject 17
   m_TagString: Untagged
@@ -34179,6 +34872,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2143901851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7770267375936833725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 2504233333554007376}
 --- !u!1 &7793609055808158400
 GameObject:
   m_ObjectHideFlags: 0
@@ -34671,6 +35377,7 @@ GameObject:
   - component: {fileID: 4970364878094163023}
   - component: {fileID: 5966934854338495446}
   - component: {fileID: 5806975986396145821}
+  - component: {fileID: 1264431329}
   m_Layer: 5
   m_Name: GameObject 45
   m_TagString: Untagged
@@ -34739,6 +35446,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1264431329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7845160623409335007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 7489596995494231979}
 --- !u!1 &7855861967304818246
 GameObject:
   m_ObjectHideFlags: 0
@@ -35773,7 +36493,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage4
+        m_MethodName: CloseColorPanels
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 535230945}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37918,6 +38650,7 @@ GameObject:
   - component: {fileID: 3010891158025512519}
   - component: {fileID: 7263901573327309619}
   - component: {fileID: 3321565437104570928}
+  - component: {fileID: 1714740994}
   m_Layer: 5
   m_Name: GameObject 30
   m_TagString: Untagged
@@ -37986,6 +38719,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1714740994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8204371523062665316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 5676227662529506987}
 --- !u!1 &8235770310086132883
 GameObject:
   m_ObjectHideFlags: 0
@@ -38263,7 +39009,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 461336723}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38549,7 +39307,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 448511440}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38818,7 +39588,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1787936366}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -39028,7 +39810,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1253435655}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -40033,6 +40827,7 @@ GameObject:
   - component: {fileID: 2783624747450750713}
   - component: {fileID: 2283307587523983598}
   - component: {fileID: 7962660676522107013}
+  - component: {fileID: 670957502}
   m_Layer: 5
   m_Name: GameObject 41
   m_TagString: Untagged
@@ -40101,6 +40896,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &670957502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8671839754741078614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03b504c4a4619468d080e55a95b882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColoringPage: {fileID: 1764597959011604336}
 --- !u!1 &8673087405349710379
 GameObject:
   m_ObjectHideFlags: 0
@@ -40301,7 +41109,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1580787087}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -41611,7 +42431,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8053201048614561882}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: OpenColoringPage1
+        m_MethodName: OpenColoringPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1221756514}
+        m_TargetAssemblyTypeName: OpenColoringPage, Assembly-CSharp
+        m_MethodName: OpenCurrentColoringPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
