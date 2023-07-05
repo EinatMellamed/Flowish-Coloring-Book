@@ -10,13 +10,13 @@ public class UIManager : MonoBehaviour
     [SerializeField] List<GameObject> ColoringPagesPanels;
     [SerializeField] GameObject draw;
     [SerializeField] GameObject brush, eraser;
-    [SerializeField] GameObject currentColoringPage;
+    //[SerializeField] GameObject currentColoringPage;
 
     // Start is called before the first frame update
     void Start()
     {
-
-        CloseColorPanels();
+        CloseAllUI();
+       
         UI[4].SetActive(true);
         DisableDrawing();
     }
@@ -83,7 +83,7 @@ public class UIManager : MonoBehaviour
 
     }
 
-    public void OpenMainMenu()
+    public void OpenBook()
     {
         DisableDrawing();
         CloseAllUI();
