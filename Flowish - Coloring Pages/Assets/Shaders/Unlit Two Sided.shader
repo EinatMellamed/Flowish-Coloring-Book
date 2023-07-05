@@ -3,13 +3,14 @@ Shader "Unlit/Two-Sided"
     Properties
     {
         _MainTex("Texture", 2D) = "white" {}
-        [Enum(UnityEngine.Rendering.CullMode)]_Cull("Cull", float) = 0
+        [Enum(UnityEngine.Rendering.CullMode)] _Cull("Cull", float) = 0
         _IsFront("Is Front", Float) = 0
     }
         SubShader
         {
-            Tags {"Queue" = "Transparent" "RenderType" = "Transparent" }
-            Lighting off ZWrite off
+            Tags { "Queue" = "Transparent" "RenderType" = "Transparent" }
+            Lighting Off
+            ZWrite Off
             Cull[_Cull]
 
             Pass
@@ -41,7 +42,8 @@ Shader "Unlit/Two-Sided"
                 {
                     v2f o;
                     o.vertex = UnityObjectToClipPos(v.vertex);
-                    o.uv = TRANSFORM_TEX(v.uv, _MainTex);
+                    o.uv = v.uv;
+
                     return o;
                 }
 

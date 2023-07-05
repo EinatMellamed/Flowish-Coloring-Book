@@ -22,6 +22,7 @@ public class book : MonoBehaviour
         {
 
             pages[i].transform.rotation= Quaternion.identity;
+            pages[i].GetComponent<PageFlip>().FlipPage();
         }
         pages[0].SetAsLastSibling();
         backButton.SetActive(false);
@@ -33,6 +34,7 @@ public class book : MonoBehaviour
         float angle = 180f;
         ForwardButtonActions();
         pages[index].SetAsLastSibling();
+        pages[index].GetComponent<PageFlip>().FlipPage();
         StartCoroutine(Rotate(angle, true));
 
     }
@@ -60,6 +62,7 @@ public class book : MonoBehaviour
         if (rotate == true) { return; }
         float angle = 0;
         pages[index].SetAsLastSibling();
+        pages[index].GetComponent<PageFlip>().FlipPage();
         BackButtonActions();
         StartCoroutine(Rotate(angle, false));  
 
