@@ -20,6 +20,7 @@ public class PageFlip : MonoBehaviour
         if (isFrontSide)
         {
             frontImage.SetActive(true);
+            frontImage.GetComponent<RectTransform>().rotation = Quaternion.Euler(0, -180, 0);
 
             backImage.SetActive(false);
         }
