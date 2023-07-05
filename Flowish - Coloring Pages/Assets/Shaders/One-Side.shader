@@ -1,19 +1,19 @@
-Shader "Unlit/One-Side Transparent"
+Shader "Unlit/Two-Sided"
 {
     Properties
     {
         _MainTex("Texture", 2D) = "white" {}
         [Enum(UnityEngine.Rendering.CullMode)]_Cull("Cull", float) = 0
+        _IsFront("Is Front", Float) = 0
     }
         SubShader
         {
-            Tags {"Queue" = "Transparent" "RenderType" = "Transparent"}
+            Tags {"Queue" = "Transparent" "RenderType" = "Transparent" }
+            Lighting off ZWrite off
             Cull[_Cull]
-            LOD 100
 
             Pass
             {
-                Blend SrcAlpha OneMinusSrcAlpha
                 CGPROGRAM
                 #pragma vertex vert
                 #pragma fragment frag
@@ -35,6 +35,7 @@ Shader "Unlit/One-Side Transparent"
 
                 sampler2D _MainTex;
                 float4 _MainTex_ST;
+                float _IsFront;
 
                 v2f vert(appdata v)
                 {
@@ -47,8 +48,18 @@ Shader "Unlit/One-Side Transparent"
                 fixed4 frag(v2f i) : SV_Target
                 {
                     fixed4 col = tex2D(_MainTex, i.uv);
-                    col.a *= _MainTex.a; // Apply the texture's alpha to the final color alpha
-                    return col;
+
+                    if (_IsFront == 1)
+                    {
+                        // Render as front side
+                        return col;
+                    }
+                    else
+                    {
+                        // Render as back side (modify color or other properties as desired)
+                        fixed4 modifiedColor = col * 0.5; // Example modification: reduce the color intensity
+                        return modifiedColor;
+                    }
                 }
                 ENDCG
             }
