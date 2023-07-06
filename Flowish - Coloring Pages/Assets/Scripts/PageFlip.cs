@@ -12,6 +12,8 @@ public class PageFlip : MonoBehaviour
 
 
     private bool isFrontSide = true;
+
+
     public void Start()
     {
         purchaseButton.SetActive(true);
@@ -20,34 +22,43 @@ public class PageFlip : MonoBehaviour
 
     public void FlipPage()
     {
-     
-        
-            isFrontSide = !isFrontSide;
+        isFrontSide = !isFrontSide;
 
 
-      
+
 
         // Activate/deactivate images based on side
         if (isFrontSide)
         {
-           
-            frontImage.SetActive(true);
             frontImage.GetComponent<RectTransform>().rotation = Quaternion.Euler(0, -180, 0);
-            purchaseButton.SetActive(false);
-            backImage.SetActive(false);
+            Invoke("FlipForwardDetails", 0.7f);
             canvas.GetComponent<UIManager>().DisableDrawing();
 
         }
         else
         {
-            
-            frontImage.SetActive(false);
-            purchaseButton.SetActive(true);
-            backImage.SetActive(true);
-           
+
+            Invoke("FlipBackDetails", 0.7f);
+
 
         }
+    }
 
-        // Perform flipping animation and logic...
+    private void FlipForwardDetails()
+    {
+        frontImage.SetActive(true);
+
+        purchaseButton.SetActive(false);
+        backImage.SetActive(false);
+
+
+    }
+    private void FlipBackDetails()
+    {
+
+        frontImage.SetActive(false);
+        purchaseButton.SetActive(true);
+        backImage.SetActive(true);
+
     }
 }

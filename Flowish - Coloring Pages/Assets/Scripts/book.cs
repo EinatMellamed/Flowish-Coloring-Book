@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Unity.Mathematics;
 using UnityEngine;
 
+
 public class book : MonoBehaviour
 {
     [SerializeField] float pageSpeed = 0.5f;
@@ -110,6 +111,7 @@ public class book : MonoBehaviour
             Quaternion targetRotatoion = Quaternion.Euler(0, angle, 0);
             value += Time.deltaTime * pageSpeed;
             pages[index].rotation = Quaternion.Slerp(pages[index].rotation, targetRotatoion, value);
+           
             float angle1 = Quaternion.Angle(pages[index].rotation, targetRotatoion);
             
             if (angle1< 0.1f)
@@ -129,4 +131,6 @@ public class book : MonoBehaviour
         }
 
     }
+
+    
 }
