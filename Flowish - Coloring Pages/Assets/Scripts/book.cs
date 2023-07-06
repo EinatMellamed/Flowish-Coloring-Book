@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class book : MonoBehaviour
@@ -34,8 +36,16 @@ public class book : MonoBehaviour
         float angle = 180f;
         ForwardButtonActions();
         pages[index].SetAsLastSibling();
-        pages[index].GetComponent<PageFlip>().FlipPage();
+        
         StartCoroutine(Rotate(angle, true));
+
+        
+            pages[index].GetComponent<PageFlip>().FlipPage();
+       
+           
+       
+       
+
 
     }
 
@@ -56,15 +66,21 @@ public class book : MonoBehaviour
 
 
     }
-    public void RotateBack()
+   public void RotateBack()
     {
 
         if (rotate == true) { return; }
         float angle = 0;
         pages[index].SetAsLastSibling();
-        pages[index].GetComponent<PageFlip>().FlipPage();
+       
         BackButtonActions();
-        StartCoroutine(Rotate(angle, false));  
+        StartCoroutine(Rotate(angle, false));
+
+
+
+        
+            pages[index].GetComponent<PageFlip>().FlipPage();
+       
 
     }
 
@@ -95,7 +111,8 @@ public class book : MonoBehaviour
             value += Time.deltaTime * pageSpeed;
             pages[index].rotation = Quaternion.Slerp(pages[index].rotation, targetRotatoion, value);
             float angle1 = Quaternion.Angle(pages[index].rotation, targetRotatoion);
-            if(angle1< 0.1f)
+            
+            if (angle1< 0.1f)
             {
 
                 if(forward== false)
@@ -107,6 +124,7 @@ public class book : MonoBehaviour
                 rotate= false;
                 break;
             }
+            
             yield return null;
         }
 

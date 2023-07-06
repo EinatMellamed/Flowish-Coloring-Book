@@ -23,13 +23,13 @@ public class UIManager : MonoBehaviour
 
     public void OpenColorPalletePanel()
     {
-        CloseAllUI();
+       
         UI[1].SetActive(true);
 
     }
     public void OpenColorTablePanel()
     {
-        CloseAllUI();
+      
         UI[2].SetActive(true);
     }
     public void CloseAllUI()
@@ -42,14 +42,20 @@ public class UIManager : MonoBehaviour
         }
 
     }
-    public void CloseColorPanels()
+    public void CloseColorAndBrushPanels()
     {
-        EnableDrawing();
-        CloseAllUI();
-        UI[0].SetActive(true);
+
+        UI[3].SetActive(false);
+        UI[2].SetActive(false);
+        UI[1].SetActive(false);
+
 
     }
-
+    public void OpenColorOptions()
+    {
+        EnableDrawing();
+        UI[0].SetActive(true);
+    }
     public void UseEraser()
     {
 
@@ -77,8 +83,8 @@ public class UIManager : MonoBehaviour
 
     public void OpenBrushOptionsPanel()
     {
-        DisableDrawing();
-        CloseAllUI();
+        
+       
         UI[3].SetActive(true);
 
     }
@@ -107,7 +113,11 @@ public class UIManager : MonoBehaviour
 
 
     }
+    public void CloseButtonsPanel()
+    {
 
+        UI[0].SetActive(false);
+    }
 
-
+    
 }
