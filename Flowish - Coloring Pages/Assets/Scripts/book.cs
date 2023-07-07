@@ -11,11 +11,13 @@ public class book : MonoBehaviour
     [SerializeField] List<Transform> pages;
     int index = -1;
     bool rotate = false;
+   
 
     [SerializeField] GameObject backButton, forwardButton;
     private void Start()
     {
         InitialState();
+        
     }
 
     public void InitialState()
@@ -29,6 +31,7 @@ public class book : MonoBehaviour
         }
         pages[0].SetAsLastSibling();
         backButton.SetActive(false);
+       
     }
     public void RotateForward()
     {

@@ -25,12 +25,14 @@ public class UIManager : MonoBehaviour
     {
        
         UI[1].SetActive(true);
+        UI[2].SetActive(false);
 
     }
     public void OpenColorTablePanel()
     {
       
         UI[2].SetActive(true);
+        UI[1].SetActive(false);
     }
     public void CloseAllUI()
     {
@@ -48,6 +50,7 @@ public class UIManager : MonoBehaviour
         UI[3].SetActive(false);
         UI[2].SetActive(false);
         UI[1].SetActive(false);
+       
 
 
     }
@@ -55,6 +58,7 @@ public class UIManager : MonoBehaviour
     {
         EnableDrawing();
         UI[0].SetActive(true);
+        UI[6].SetActive(false);
     }
     public void UseEraser()
     {
@@ -94,6 +98,7 @@ public class UIManager : MonoBehaviour
         DisableDrawing();
         CloseAllUI();
         UI[5].SetActive(true);
+        UI[6].SetActive(true);
     }
     public void CloseAllColoringPages()
     {
@@ -117,6 +122,7 @@ public class UIManager : MonoBehaviour
     {
 
         UI[0].SetActive(false);
+        UI[6].SetActive(true);
     }
 
     
