@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] List<GameObject> ColoringPagesPanels;
     [SerializeField] GameObject draw;
     [SerializeField] GameObject brush, eraser;
+    
     //[SerializeField] GameObject currentColoringPage;
 
     // Start is called before the first frame update
@@ -59,6 +60,8 @@ public class UIManager : MonoBehaviour
         EnableDrawing();
         UI[0].SetActive(true);
         UI[6].SetActive(false);
+      
+      
     }
     public void UseEraser()
     {
@@ -99,6 +102,8 @@ public class UIManager : MonoBehaviour
         CloseAllUI();
         UI[5].SetActive(true);
         UI[6].SetActive(true);
+       
+       
     }
     public void CloseAllColoringPages()
     {
@@ -123,6 +128,8 @@ public class UIManager : MonoBehaviour
 
         UI[0].SetActive(false);
         UI[6].SetActive(true);
+       
+
     }
 
     
