@@ -1,54 +1,60 @@
+using Cinemachine.Utility;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ZoomInAndOut : MonoBehaviour
+
+
 {
-    Camera mainCamera;
+    Vector3 touchStart;
+    [SerializeField] float zoomOutMin = 0.5f;
+    [SerializeField] float zoomOutMax = 20f;
+    [SerializeField] float moveSpeed;
 
-    float touchesPrevPosDifference, touchesCurPosDifference, ZoomModifier;
-    Vector2 firstTouchPrevPos, secondTouchPrevPos;
-    [SerializeField] float zoomModifierSpeed = 0.1f;
-    [SerializeField] float maxZoomSize;
-    [SerializeField] float minZoonSize;
-    
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        mainCamera= GetComponent<Camera>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.touchCount==2)
+        if (Input.GetMouseButtonDown(0) || Input.touchCount == 2)
         {
-            Debug.Log("2 fingers");
-            Touch firstTouch = Input.GetTouch(0);
-            Touch secondTouch = Input.GetTouch(1);
-
-            firstTouchPrevPos = firstTouch.position - firstTouch.deltaPosition;
-            secondTouchPrevPos = secondTouch.position - secondTouch.deltaPosition;
-
-            touchesPrevPosDifference = (firstTouchPrevPos- secondTouchPrevPos).magnitude;
-            touchesCurPosDifference = (firstTouch.position - secondTouch.position).magnitude;
-
-            ZoomModifier = (firstTouch.deltaPosition- secondTouch.deltaPosition).magnitude * zoomModifierSpeed; 
-
-            if(touchesPrevPosDifference> touchesCurPosDifference)
+            if (Input.touchCount == 2)
             {
+                Touch touchZero = Input.GetTouch(0);
+                Touch touchOne = Input.GetTouch(1);
 
-                mainCamera.orthographicSize += ZoomModifier;
+                Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
+                Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
 
+                float prevMagnitude = (touchZeroPrevPos - touchOnePrevPos).magnitude;
+                float currentMagnitude = (touchZero.position - touchOne.position).magnitude;
+
+                float difference = currentMagnitude - prevMagnitude;
+
+                if (Mathf.Abs(difference) > 15f)
+                {
+                    Zoom(difference * 0.05f);
+                }
+                else
+                {
+                    Vector2 averageTouchPosition = (touchZero.position + touchOne.position) * 0.5f;
+                    Vector3 direction = touchStart - Camera.main.ScreenToWorldPoint(averageTouchPosition);
+                    Camera.main.transform.position += direction;
+                }
             }
-            if (touchesPrevPosDifference < touchesCurPosDifference)
+            else
             {
-
-                mainCamera.orthographicSize -= ZoomModifier;
-
+                touchStart = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             }
         }
 
-        mainCamera.orthographicSize = Mathf.Clamp(mainCamera.orthographicSize, minZoonSize, maxZoomSize);
+        Zoom(Input.GetAxis("Mouse ScrollWheel"));
+    }
+
+    void Zoom(float increment)
+    {
+        Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, zoomOutMin, zoomOutMax);
     }
 }
+
+
+
+
