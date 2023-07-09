@@ -6,7 +6,9 @@ using UnityEngine;
 public class PageFlip : MonoBehaviour
 {
     public GameObject frontImage;
+    public GameObject frontUserInput;
     public GameObject backImage;
+    public GameObject backUserInput;
    
     public GameObject canvas;
 
@@ -23,6 +25,7 @@ public class PageFlip : MonoBehaviour
         if (isFrontSide)
         {
             frontImage.GetComponent<RectTransform>().rotation = Quaternion.Euler(0, -180, 0);
+            frontUserInput.GetComponent<RectTransform>().rotation = Quaternion.Euler(0, -180, 0);
             Invoke("FlipForwardDetails", 0.7f);
             canvas.GetComponent<UIManager>().DisableDrawing();
 
@@ -39,9 +42,10 @@ public class PageFlip : MonoBehaviour
     private void FlipForwardDetails()
     {
         frontImage.SetActive(true);
-
+        frontUserInput.SetActive(true);
        
         backImage.SetActive(false);
+       backUserInput.SetActive(false);
 
 
     }
@@ -49,8 +53,9 @@ public class PageFlip : MonoBehaviour
     {
 
         frontImage.SetActive(false);
-       
-        backImage.SetActive(true);
+        frontUserInput.SetActive(false);
 
+        backImage.SetActive(true);
+        backUserInput.SetActive(true);
     }
 }

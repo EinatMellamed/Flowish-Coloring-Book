@@ -205,8 +205,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frontImage: {fileID: 574576538607775340}
+  frontUserInput: {fileID: 8420055648188928076}
   backImage: {fileID: 1287011897}
-  purchaseButton: {fileID: 0}
+  backUserInput: {fileID: 5512345916973601963}
   canvas: {fileID: 0}
 --- !u!1 &5512345916973601963
 GameObject:
@@ -242,7 +243,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 960, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7807490046879068939
 GameObject:
@@ -356,5 +357,5 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 960, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
