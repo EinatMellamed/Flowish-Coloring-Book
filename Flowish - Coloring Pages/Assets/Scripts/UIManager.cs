@@ -10,7 +10,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] List<GameObject> ColoringPagesPanels;
     [SerializeField] GameObject draw;
     [SerializeField] GameObject brush, eraser;
-    [SerializeField] GameObject book;
+   
     
     //[SerializeField] GameObject currentColoringPage;
 
@@ -102,7 +102,7 @@ public class UIManager : MonoBehaviour
         DisableDrawing();
         CloseAllUI();
         UI[5].SetActive(true);
-        book.SetActive(true);
+       
        
        
     }

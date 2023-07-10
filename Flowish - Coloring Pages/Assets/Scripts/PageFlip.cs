@@ -26,14 +26,14 @@ public class PageFlip : MonoBehaviour
         {
             frontImage.GetComponent<RectTransform>().rotation = Quaternion.Euler(0, -180, 0);
             frontUserInput.GetComponent<RectTransform>().rotation = Quaternion.Euler(0, -180, 0);
-            Invoke("FlipForwardDetails", 0.7f);
+            Invoke("FlipForwardDetails", 0.3f);
             canvas.GetComponent<UIManager>().DisableDrawing();
 
         }
         else
         {
 
-            Invoke("FlipBackDetails", 0.7f);
+            Invoke("FlipBackDetails", 0.3f);
 
 
         }
