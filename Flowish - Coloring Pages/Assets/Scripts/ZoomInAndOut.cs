@@ -4,11 +4,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ZoomInAndOut : MonoBehaviour
 
 
 {
-   
+    [SerializeField] CinemachineVirtualCamera cam;
     Vector3 touchStart;
     [SerializeField] float zoomOutMin = 0.5f;
     [SerializeField] float zoomOutMax = 20f;
@@ -51,6 +52,7 @@ public class ZoomInAndOut : MonoBehaviour
                   
 
                     Camera.main.transform.position += direction;
+                    cam.transform.position = Camera.main.transform.position;
                 }
             }
             else
@@ -67,19 +69,20 @@ public class ZoomInAndOut : MonoBehaviour
 
     void Zoom(float increment)
     {
-        Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, zoomOutMin, zoomOutMax);
+       // Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, zoomOutMin, zoomOutMax);
+        cam.m_Lens.OrthographicSize = Mathf.Clamp(cam.m_Lens.OrthographicSize - increment, zoomOutMin, zoomOutMax);
         
       
     }
 
-    private Vector3 ClampCamera(Vector3 targetPos)
-    {
+   // private Vector3 ClampCamera(Vector3 targetPos)
+   // {
 
-         float newX = Mathf.Clamp(Camera.main.transform.position.x, bookMinX, bookMaxX);
-       float newY =  Mathf.Clamp(Camera.main.transform.position.y, bookMinY, bookMaxY);
+     //    float newX = Mathf.Clamp(Camera.main.transform.position.x, bookMinX, bookMaxX);
+    //   float newY =  Mathf.Clamp(Camera.main.transform.position.y, bookMinY, bookMaxY);
 
-        return new Vector3(newX, newY, Camera.main.transform.position.z);
-    }
+    //    return new Vector3(newX, newY, Camera.main.transform.position.z);
+   // }
 
   
 
