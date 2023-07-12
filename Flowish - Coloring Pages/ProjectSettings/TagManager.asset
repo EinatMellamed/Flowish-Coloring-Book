@@ -11,7 +11,7 @@ TagManager:
   - UserInput
   - Water
   - UI
-  - 
+  - UI Drawings
   - 
   - 
   - 
@@ -41,9 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Illustrations
-    uniqueID: 647155495
-    locked: 0
   - name: UserInput
     uniqueID: 535662719
+    locked: 0
+  - name: Illustrations
+    uniqueID: 647155495
     locked: 0
