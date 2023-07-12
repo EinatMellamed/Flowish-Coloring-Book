@@ -8,7 +8,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - UserInput
   - Water
   - UI
   - 
@@ -43,4 +43,7 @@ TagManager:
     locked: 0
   - name: Illustrations
     uniqueID: 647155495
+    locked: 0
+  - name: UserInput
+    uniqueID: 535662719
     locked: 0

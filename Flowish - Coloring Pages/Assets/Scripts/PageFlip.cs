@@ -11,12 +11,18 @@ public class PageFlip : MonoBehaviour
     public GameObject backUserInput;
    
     public GameObject canvas;
-
+    [SerializeField] GameObject draw;
 
     private bool isFrontSide = true;
 
 
-
+    private void Start()
+    {
+        frontImage.SetActive(true);
+        frontUserInput.SetActive(true);
+        backImage.SetActive(false);
+        backUserInput.SetActive(false);
+    }
     public void FlipPage()
     {
         isFrontSide = !isFrontSide;
@@ -24,8 +30,8 @@ public class PageFlip : MonoBehaviour
         // Activate/deactivate images based on side
         if (isFrontSide)
         {
-            frontImage.GetComponent<RectTransform>().rotation = Quaternion.Euler(0, -180, 0);
-            frontUserInput.GetComponent<RectTransform>().rotation = Quaternion.Euler(0, -180, 0);
+          //  frontImage.GetComponent<RectTransform>().rotation = Quaternion.Euler(0, -180, 0);
+          //  frontUserInput.GetComponent<RectTransform>().rotation = Quaternion.Euler(0, -180, 0);
             Invoke("FlipForwardDetails", 0.3f);
             canvas.GetComponent<UIManager>().DisableDrawing();
 
@@ -43,6 +49,7 @@ public class PageFlip : MonoBehaviour
     {
         frontImage.SetActive(true);
         frontUserInput.SetActive(true);
+        draw.GetComponent<Drawing>().currentUserInputLayer = frontUserInput.transform;
        
         backImage.SetActive(false);
        backUserInput.SetActive(false);
@@ -57,5 +64,6 @@ public class PageFlip : MonoBehaviour
 
         backImage.SetActive(true);
         backUserInput.SetActive(true);
+        draw.GetComponent<Drawing>().currentUserInputLayer = backUserInput.transform;
     }
 }

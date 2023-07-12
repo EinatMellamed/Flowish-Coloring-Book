@@ -13,6 +13,10 @@ public class Drawing : MonoBehaviour
     public int brushCount;
     public LineRenderer currentLineRenderer;
     public List<GameObject> lines = new List<GameObject>();
+    public Transform currentUserInputLayer;
+    
+
+   
    
 
     Vector2 lastPos;
@@ -97,10 +101,11 @@ public class Drawing : MonoBehaviour
     public void CreateBrush()
     {
 
-
+      //  set the userInputLayer[] as [i], if userInputLayer[] is activated && its parent in set as last sibeling in the book)
         GameObject brushInstance = Instantiate(brush);
         //determained the color of the linerenderer by picking with the mouse a color in a ui image
         currentLineRenderer = brushInstance.GetComponent<LineRenderer>();
+        currentLineRenderer.transform.SetParent(currentUserInputLayer, true);
         // 2 points are requiered to start a line renderer
         Vector2 mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
         currentLineRenderer.SetPosition(0, mousePos);

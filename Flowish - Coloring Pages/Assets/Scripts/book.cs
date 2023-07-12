@@ -9,6 +9,9 @@ public class book : MonoBehaviour
 {
     [SerializeField] float pageSpeed = 0.5f;
     [SerializeField] List<Transform> pages;
+    [SerializeField] GameObject draw;
+  
+
     int index = -1;
     bool rotate = false;
    
@@ -27,9 +30,11 @@ public class book : MonoBehaviour
         {
 
             pages[i].transform.rotation= Quaternion.identity;
-            pages[i].GetComponent<PageFlip>().FlipPage();
+           // pages[i].GetComponent<PageFlip>().FlipPage();
+           
         }
         pages[0].SetAsLastSibling();
+        draw.GetComponent<Drawing>().currentUserInputLayer = pages[0].GetComponent<PageFlip>().frontUserInput.transform;
         backButton.SetActive(false);
        
     }
